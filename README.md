@@ -159,7 +159,7 @@ coco_kpts
 ### Pretrained modes for a person detector
 
 ```shell
-wget http://software-dl.ti.com/jacinto7/esd/modelzoo/gplv3/08_02_00_11/edgeai-yolov5/pretrained_models/checkpoints/keypoint/coco/edgeai-yolov5/other/person_detector/yolov5s6_960_71p6_93p1/weights/last.pt weights/yolov5s6-person-960.pt
+wget http://software-dl.ti.com/jacinto7/esd/modelzoo/gplv3/08_02_00_11/edgeai-yolov5/pretrained_models/checkpoints/keypoint/coco/edgeai-yolov5/other/person_detector/yolov5s6_960_71p6_93p1/weights/last.pt -O weights/yolov5s6-person-960.pt
 ```
 
 ## Train
