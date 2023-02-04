@@ -172,9 +172,25 @@ python train.py --data data/coco_kpts.yaml --cfg cfg/yolov5s6_kpts.yaml --weight
 
 You may need to reduce the batch size based on your GPU memory availability.
 
+### Change `best.pt` to a meaningful name such as `<model>_<type>_<img-size>.pt`.
+
+```shell
+mv runs/train/exp/weights/best.pt runs/train/exp/weights/yolov5s6_kpts_960.pt
+``` 
+
+## Test
+```shell
+python test.py --data data/coco_kpts.yaml --img 960 --conf 0.01 --iou 0.65 --weights runs/train/exp/weights/yolov5s6_kpts_960.pt --kpt-label
+```
+
+## Detect
+```shell
+python detect.py --weights runs/train/exp/weights/yolov5s6_kpts_960.pt --conf 0.2 --kpt-label --source path_to_file/video 
+```
+
 ---
 
-The below section is from the original.
+# The below section is from the original.
 
 ---
 
